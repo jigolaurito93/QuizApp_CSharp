@@ -13,7 +13,7 @@ namespace QuizAppCSharp
             Question[] questions = new Question[]
             {
                 new Question(
-                    "What is the capital of Illinois", // QuestionText
+                    "What is the capital of Illinois?", // QuestionText
                     new string[] {"Naperville", "Chicago", "Des Plaines", "Springfield"}, // Answers
                     3 // CorrectAnswerIndex
                 )
