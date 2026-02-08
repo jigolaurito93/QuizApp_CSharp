@@ -8,18 +8,20 @@ namespace QuizAppCSharp
 {
     class Quiz
     {
-        private Question[] questions;
+        private Question[] _questions;
+        private int _score;
 
         public Quiz(Question[] questions)
         {
-            this.questions = questions;
+            this._questions = questions;
+            _score = 0;
         }
 
         public void StartQuiz()
         {
             Console.WriteLine("Welcome to the Quiz!");
             int questionNumber = 1;
-            foreach (Question question in questions)
+            foreach (Question question in _questions)
             {
                 Console.WriteLine($"Question {questionNumber++}: ");
                 DisplayQuestion(question);
@@ -27,12 +29,40 @@ namespace QuizAppCSharp
                 if (question.isCorrectAnswer(userChoice))
                 {
                     Console.WriteLine("Correct!");
+                    _score++;
                 }
                 else
                 {
                     Console.WriteLine($"Wrong! The correct answer is: {question.Answers[question.CorrectAnswerIndex]}");
+                    Console.WriteLine();
                 }
             }
+            DisplayResults();
+
+        }
+
+        private void DisplayResults()
+        {
+            Console.WriteLine("RESULTS:");
+            Console.WriteLine($"Quiz is finished. Your score is: {_score} out of {_questions.Length}!!");
+
+            double percentage = (double)_score / _questions.Length;
+            if (percentage >= 0.8)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Excellent Work!!!");
+            }
+            else if (percentage >= 0.5)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Good Effort!!");
+            }
+            else if (percentage < 0.5)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Keep Practicing!!!");
+            }
+
         }
 
         private void DisplayQuestion(Question question)
