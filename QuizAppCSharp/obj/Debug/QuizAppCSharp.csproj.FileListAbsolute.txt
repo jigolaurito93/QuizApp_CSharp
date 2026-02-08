@@ -1,0 +1,7 @@
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\bin\Debug\QuizAppCSharp.exe.config
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\bin\Debug\QuizAppCSharp.exe
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\bin\Debug\QuizAppCSharp.pdb
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\obj\Debug\QuizAppCSharp.csproj.AssemblyReference.cache
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\obj\Debug\QuizAppCSharp.csproj.CoreCompileInputs.cache
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\obj\Debug\QuizAppCSharp.exe
+C:\Users\j.laurito\Documents\Dev Tools\Repos\C#\QuizAppCSharp\QuizAppCSharp\obj\Debug\QuizAppCSharp.pdb
