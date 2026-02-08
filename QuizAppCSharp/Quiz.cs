@@ -27,6 +27,23 @@ namespace QuizAppCSharp
                 Console.ResetColor();
                 Console.WriteLine($". {question.Answers[i]}");
             };
+
+            if (GetUserChoice() == question.CorrectAnswerIndex)
+            {
+                Console.WriteLine("Correct");
+            }
+        }
+
+        private int GetUserChoice()
+        {
+            Console.WriteLine("Your answer (number): ");
+            string input = Console.ReadLine();
+            int choice = 0;
+            while (!int.TryParse(input, out choice) || choice < 1 || choice > 4)
+            {
+                Console.WriteLine("Invalid choice. Please enter a number between 1 and 4: ");
+            }
+            return choice -1;
         }
     }
 }
